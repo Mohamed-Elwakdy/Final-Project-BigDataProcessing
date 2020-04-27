@@ -69,5 +69,4 @@ Gait measures are detected, analyzed, and averaged over the extent of the walkin
 
 
 ###                          ![Image of screencapture](images/GaitCycleDuration.jpg)
-
-                            Figure.2 Full Body Gait Measures: Gait Cycle Analysis
+                              Figure.2 Full Body Gait Measures: Gait Cycle Analysis
