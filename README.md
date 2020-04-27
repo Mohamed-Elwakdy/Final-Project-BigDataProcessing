@@ -24,7 +24,7 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
                                            Figure.1 Gait Cycle Analysis
 
 
-### Read h1 File
+### Read h1 File (Getting the headers/keys)
 
 ```
 f =  h5py.File("walking5.h5",'r')
@@ -37,5 +37,13 @@ print(res.keys())
 
 ### Anticipatory Postural Adjustment 
 
+Anticipatory postural adjustments are defined as the activation of postural muscles in a feedforward manner before a voluntary movement begins.
 
+### Fields Description of the Anticipatory postural adjustments
 
+The measures of the Anticipatory postural adjustments including 'First Step Duration' and 'First Step Range of Motion'.
+
+    Field Name  | Description |
+| ------------- | --------------------- |
+| First Step Duration |The duration of the period spanning from the end of the APA to the initial contact of the ﬁrst step|
+|First Step Range of Motion | The integrated angular velocity of the stepping foot from the end of the APA to the initial contact of the step 
