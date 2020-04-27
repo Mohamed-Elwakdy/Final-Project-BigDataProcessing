@@ -14,11 +14,8 @@ Events/Gait/Lower Limb/All Steps Left
 Events/Gait/Lower Limb/All Steps Right  
 Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times  
 
-
 <br>
-
 ### Gait Cycle Analysis 
-
 <br>
 
 
