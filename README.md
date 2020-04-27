@@ -51,7 +51,6 @@ The measures of the Anticipatory postural adjustments including 'First Step Dura
 The features of Anticipatory postural adjustments variable is put into two data frames where the number of rows are 2 rows. 
 
 ```
-
 First_Step_Duration = res['Measures']['Anticipatory Postural Adjustment']['First Step Duration']
 df4 = pd.DataFrame(First_Step_Duration)
 df4.columns = ['AnticipatoryPosturalAdjustmentFirstStepDuration']
@@ -59,5 +58,13 @@ First_Step_Range_of_Motion = res['Measures']['Anticipatory Postural Adjustment']
 df5 = pd.DataFrame(First_Step_Range_of_Motion)
 df5.columns = ['AnticipatoryPosturalAdjustmentFirstStepRangeofMotion']
 
-
 ```
+
+### Lower Limb
+
+The leg region is the part of the lower limb that lies between the knee and the rounded medial and lateral prominences 
+that flank the ankle joint. It connects the knee and foot.
+
+Gait measures are detected, analyzed, and averaged over the extent of the walking duration of the subject. All measures are assessed for asymmetry and variability.
+
+
