@@ -68,3 +68,6 @@ that flank the ankle joint. It connects the knee and foot.
 Gait measures are detected, analyzed, and averaged over the extent of the walking duration of the subject. All measures are assessed for asymmetry and variability.
 
 
+###                          ![Image of screencapture](images/CycleAnalysis.jpg)
+
+                            Figure.2 Full Body Gait Measures: Gait Cycle Analysis
