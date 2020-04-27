@@ -85,4 +85,10 @@ The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double 
 | ------------- | --------------------- |
 | Cycle Duration  |The duration of a full gait cycle, measured from the left foot’s initial contact to the next initial contact of the left foot|
 |Gait Speed | The forward speed of the subject, measured as the forward distance traveled during the gait cycle divided by the gait cycle duration
+|Double Support | The percentage of the gait cycle in which both feet are on the ground
+|Step Duration| The duration of a step, measured as the period from initial contact of one foot to the next initial contact of the opposite foot
+|Stride Length| The forward distance travelled by a foot during a gait cycle
+|Swing| The percentage of the gait cycle in which the foot is not on the ground
+
+
 
