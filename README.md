@@ -26,5 +26,21 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
                                            Figure.1 Gait Cycle Analysis
 <br>
 
+### Read h1 File
 
+<br>
+
+```
+f =  h5py.File("walking5.h5",'r')
+for name in f:
+    print(name)
+res = hdfdict.load("walking5.h5")
+print(res.keys())
+
+```
+<br>
+
+### Anticipatory Postural Adjustment 
+
+<br>
 
