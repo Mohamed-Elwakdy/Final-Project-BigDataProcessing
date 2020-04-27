@@ -108,4 +108,24 @@ The upper limb or upper extremity is the region in the body extending from the d
 ###                                ![Image of screencapture](images/Upperlimb.jpg)
          Figure.5 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, Turning and Sit to Stand  
 
+### Fields Description of the Upper Limb  
+The measures of the Upper Limb including the Arm Swing Velocity and Arm Swing Range of Motion. 
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+| Arm Swing Velocity  |The maximum rotational velocity of the arm swing|
+|Arm Swing Range of Motion | The angular range of the arm swing|
+
+The features of Upper Limb variable are put into two data frames. The number of rows of the data frames are 25 row.
+
+```
+Measures_Gait_UpperLimb_MaximumVelocity = res['Measures']['Gait']['Upper Limb']['Maximum Velocity']
+df23 = pd.DataFrame(Measures_Gait_UpperLimb_MaximumVelocity)
+df23.columns = ['MaximumRotationalVelocityofTheArmSwing1','MaximumRotationalVelocityofTheArmSwing2']
+Measures_Gait_UpperLimb_RangeofMotion = res['Measures']['Gait']['Upper Limb']['Range of Motion']
+df24 = pd.DataFrame(Measures_Gait_UpperLimb_RangeofMotion)
+df24.columns = ['TheAngularRangOfTheArmSwing1','TheAngularRangOfTheArmSwing2']
+``` 
+
+
 
