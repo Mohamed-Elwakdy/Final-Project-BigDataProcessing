@@ -19,7 +19,7 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
 
 ### Gait Cycle Analysis 
 
-                               ![Image of screencapture](images/CycleAnalysis.jpg)
+###                               ![Image of screencapture](images/CycleAnalysis.jpg)
 
 ####                                           Figure.1 Gait Cycle Analysis
 
@@ -68,13 +68,13 @@ that flank the ankle joint. It connects the knee and foot.
 Gait measures are detected, analyzed, and averaged over the extent of the walking duration of the subject. All measures are assessed for asymmetry and variability.
 
 
-                          ![Image of screencapture](images/GaitCycleDuration.jpg)
+###                             ![Image of screencapture](images/GaitCycleDuration.jpg)
 ####                               Figure.2 Full Body Gait Measures: Gait Cycle Analysis
 
-                          ![Image of screencapture](images/DoubleSupport.jpg)
+###                             ![Image of screencapture](images/DoubleSupport.jpg)
 ####                                    Figure.3 Full Body Gait Measures: Double Support 
 
-                          ![Image of screencapture](images/TeminalDoubleSupport.jpg)
+###                             ![Image of screencapture](images/TeminalDoubleSupport.jpg)
 ####                                    Figure.4 Full Body Gait Measures: Terminal Double Support 
 
 ### Fields Description of Lower Limb 
@@ -107,7 +107,7 @@ df14.columns = ['GaitLowerLimbNumberStepsInTurnPerMinute1', 'MeasuresGaitLowerLi
 
 The upper limb or upper extremity is the region in the body extending from the deltoid region up to and including the hand, including the arm, axilla and shoulder.
 
-                                ![Image of screencapture](images/Upperlimb.jpg)
+###                                ![Image of screencapture](images/Upperlimb.jpg)
 ####    Figure.5 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, Turning and Sit to Stand  
 
 
