@@ -116,7 +116,7 @@ The measures of the Upper Limb including the Arm Swing Velocity and Arm Swing Ra
 | Arm Swing Velocity  |The maximum rotational velocity of the arm swing|
 |Arm Swing Range of Motion | The angular range of the arm swing|
 
-The features of Upper Limb variable are put into two data frames. The number of rows of the data frames are 25 row.
+The features of Upper Limb variable are put into two data frames. The number of rows are 25 row.
 
 ```
 Measures_Gait_UpperLimb_MaximumVelocity = res['Measures']['Gait']['Upper Limb']['Maximum Velocity']
@@ -126,6 +126,24 @@ Measures_Gait_UpperLimb_RangeofMotion = res['Measures']['Gait']['Upper Limb']['R
 df24 = pd.DataFrame(Measures_Gait_UpperLimb_RangeofMotion)
 df24.columns = ['TheAngularRangOfTheArmSwing1','TheAngularRangOfTheArmSwing2']
 ``` 
+### Turning Analysis
+
+Postural measures are detected, analyzed, and averaged over the extent of the walking duration of the subject.
+
+### Fields Description of the Turning 
+
+The measures of the Turning including the Angle, Duration and Velocity.
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+|Angle|The rotational angle of the turn|
+|Duration|The duration of the turn|
+|Velocity|The peak angular velocity of the turn|
+
+
+###                                ![Image of screencapture](images/TurningAnalysis.jpg)
+                                        Figure.6 Postural Measures: Turning Analysis 
+
 
 
 
