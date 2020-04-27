@@ -73,3 +73,6 @@ Gait measures are detected, analyzed, and averaged over the extent of the walkin
 
 ###                          ![Image of screencapture](images/DoubleSupport.jpg)
                                     Figure.3 Full Body Gait Measures: Double Support 
+
+###                          ![Image of screencapture](images/TeminalDoubleSupport.jpg)
+                                    Figure.4 Full Body Gait Measures: Terminal Double Support  
