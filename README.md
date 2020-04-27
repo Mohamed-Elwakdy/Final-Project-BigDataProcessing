@@ -10,3 +10,15 @@ Here, I worked on one nested data structure h5 file which contains the features 
 
 This is an example of nested data structure where the number of rows is 113 rows: 
 
+Events/Gait/Lower Limb/All Steps Left 
+Events/Gait/Lower Limb/All Steps Right  
+Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times  
+
+
+<br>
+
+### Gait Cycle Analysis 
+
+<br>
+
+
