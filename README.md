@@ -107,7 +107,7 @@ df14.columns = ['GaitLowerLimbNumberStepsInTurnPerMinute1', 'MeasuresGaitLowerLi
 
 The upper limb or upper extremity is the region in the body extending from the deltoid region up to and including the hand, including the arm, axilla and shoulder.
 
-#### *                                                     ![Image of screencapture](images/Upperlimb.jpg)
+#### Image                                                           ![Image of screencapture](images/Upperlimb.jpg)
                                     Figure.5 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, Turning and Sit to Stand  
 
 
