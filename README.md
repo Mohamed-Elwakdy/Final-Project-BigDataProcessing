@@ -47,3 +47,17 @@ The measures of the Anticipatory postural adjustments including 'First Step Dura
 | ------------- | --------------------- |
 | First Step Duration |The duration of the period spanning from the end of the APA to the initial contact of the ﬁrst step|
 |First Step Range of Motion | The integrated angular velocity of the stepping foot from the end of the APA to the initial contact of the step 
+
+The features of Anticipatory postural adjustments variable is put into two data frames where the number of rows are 2 rows. 
+
+```
+
+First_Step_Duration = res['Measures']['Anticipatory Postural Adjustment']['First Step Duration']
+df4 = pd.DataFrame(First_Step_Duration)
+df4.columns = ['AnticipatoryPosturalAdjustmentFirstStepDuration']
+First_Step_Range_of_Motion = res['Measures']['Anticipatory Postural Adjustment']['First Step Range of Motion'] 
+df5 = pd.DataFrame(First_Step_Range_of_Motion)
+df5.columns = ['AnticipatoryPosturalAdjustmentFirstStepRangeofMotion']
+
+
+```
