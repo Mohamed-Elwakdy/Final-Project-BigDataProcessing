@@ -23,5 +23,5 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
 
 ![Image of screencapture](images/CycleAnalysis.jpg)
 
-                                           * #### Figure.1 Gait Cycle Analysis
+                                           Figure.1 Gait Cycle Analysis
 
