@@ -72,4 +72,4 @@ Gait measures are detected, analyzed, and averaged over the extent of the walkin
                               Figure.2 Full Body Gait Measures: Gait Cycle Analysis
 
 ###                          ![Image of screencapture](images/DoubleSupport.jpg)
-                              Figure.3 Full Body Gait Measures: Double Support 
+                                    Figure.3 Full Body Gait Measures: Double Support 
