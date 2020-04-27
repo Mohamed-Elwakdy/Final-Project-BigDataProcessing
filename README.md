@@ -48,7 +48,7 @@ The measures of the Anticipatory postural adjustments including 'First Step Dura
 | First Step Duration |The duration of the period spanning from the end of the APA to the initial contact of the ﬁrst step|
 |First Step Range of Motion | The integrated angular velocity of the stepping foot from the end of the APA to the initial contact of the step 
 
-The features of Anticipatory postural adjustments variable is put into two data frames where the number of rows are 2 rows. 
+The features of Anticipatory postural adjustments variable are put into two data frames where the number of rows are 2 rows. 
 
 ```
 First_Step_Duration = res['Measures']['Anticipatory Postural Adjustment']['First Step Duration']
@@ -90,5 +90,24 @@ The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double 
 |Stride Length| The forward distance travelled by a foot during a gait cycle
 |Swing| The percentage of the gait cycle in which the foot is not on the ground
 
+The features of the Lower Limb variable are put into data frames. The size of these data frames is not the same where the number of columns are not constant while the number of rows are 25 rows. 
+
+```
+Measures_Gait_LowerLimb_GaitCycleDuration= res['Measures']['Gait']['Lower Limb']['Gait Cycle Duration']
+df12 = pd.DataFrame(Measures_Gait_LowerLimb_GaitCycleDuration)
+df12.columns = ['GaitLowerLimbGaitCycleDurationInSecondsStart','MeasuresGaitLowerLimbGaitCycleDurationInSecondsEnd']
+Measures_Gait_LowerLimb_Gait_Speed= res['Measures']['Gait']['Lower Limb']['Gait Speed']
+df13 = pd.DataFrame(Measures_Gait_LowerLimb_Gait_Speed)
+df13.columns = ['GaitLowerLimbGaitSpeed1','MeasuresGaitLowerLimbGaitSpeed2']
+Measures_Gait_LowerLimb_NumberStepsInTurn= res['Measures']['Gait']['Lower Limb']['No. Steps in Turn']
+df14 = pd.DataFrame(Measures_Gait_LowerLimb_NumberStepsInTurn)
+df14.columns = ['GaitLowerLimbNumberStepsInTurnPerMinute1', 'MeasuresGaitLowerLimbNumberStepsInTurnPerMinute2']
+```
+### Upper Limb
+
+The upper limb or upper extremity is the region in the body extending from the deltoid region up to and including the hand, including the arm, axilla and shoulder.
+
+###                          ![Image of screencapture](images/Upperlimb.jpg)
+                                    Figure.5 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, Turning and Sit to Stand  
 
 
