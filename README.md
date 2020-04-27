@@ -43,7 +43,7 @@ Anticipatory postural adjustments are defined as the activation of postural musc
 
 The measures of the Anticipatory postural adjustments including 'First Step Duration' and 'First Step Range of Motion'.
 
-    Field Name  | Description |
+|    Field Name  | Description |
 | ------------- | --------------------- |
 | First Step Duration |The duration of the period spanning from the end of the APA to the initial contact of the ﬁrst step|
 |First Step Range of Motion | The integrated angular velocity of the stepping foot from the end of the APA to the initial contact of the step 
