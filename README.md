@@ -75,4 +75,14 @@ Gait measures are detected, analyzed, and averaged over the extent of the walkin
                                     Figure.3 Full Body Gait Measures: Double Support 
 
 ###                          ![Image of screencapture](images/TeminalDoubleSupport.jpg)
-                                    Figure.4 Full Body Gait Measures: Terminal Double Support  
+                                    Figure.4 Full Body Gait Measures: Terminal Double Support 
+
+### Fields Description of Lower Limb 
+
+The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double Support, Step Duration, Stride Length and Swing.  
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+| Cycle Duration  |The duration of a full gait cycle, measured from the left foot’s initial contact to the next initial contact of the left foot|
+|Gait Speed | The forward speed of the subject, measured as the forward distance traveled during the gait cycle divided by the gait cycle duration
+
