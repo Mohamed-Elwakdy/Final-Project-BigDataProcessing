@@ -1,6 +1,5 @@
-<br>
+
 ### Introduction About The Dataset 
-<br>
 
 In this project, the APDM’s advanced wearable sensors, Opalsand Mobility Lab have been used to collect, analyze, and store outcome measures. This process takes less than five minutes and the number of sensors is 3 or 6.
 
