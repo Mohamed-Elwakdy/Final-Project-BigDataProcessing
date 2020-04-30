@@ -23,6 +23,16 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
 ###                               ![Image of screencapture](images/CycleAnalysis.jpg)
                                            Figure.1 Gait Cycle Analysis
 
+### Import packages
+
+
+|    Package Name  | Description |
+| ------------- | --------------------- |
+|pandas  |pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language|
+|hdfdict|hdfdict helps h5py to dump and load python dictionaries|
+|h5py | The h5py package is a Pythonic interface to the HDF5 binary data format with storing huge amounts of numerical data, and easily manipulate that data from NumPy|
+|xlsxwriter|XlsxWriter is a Python module that can be used to write text, numbers, formulas and hyperlinks to multiple worksheets|
+
 
 ### Read h1 File (Getting the headers/keys)
 
@@ -34,6 +44,41 @@ res = hdfdict.load("walking5.h5")
 print(res.keys())
 
 ```
+
+### Collect Into DataFrames
+
+All fields in this data set has been collected into datafrmes where the number of columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a new
+sheet. 
+
+Each sheet contains a Dataframe. For example, sheet 1 contaion Dataframe1, sheet2 contains Dataframe 2, sheet3 contains Dataframe 3, sheet4 contains Dataframe 4, sheet5 contains Dataframe 5 and sheet6 contains Dataframe 6
+The number of columns and rows in each sheet is not the same. 
+
+```
+dfd = {} # {1:df1,5:df2,113:df3<-add col}
+         # Key indicates to the number of rows for each Dataframe
+
+def print_attrs(name, obj):
+    global dfd
+    if '<class \'h5py._hl.dataset.Dataset\'>' == str(type(obj)):
+        k= str(len(obj))
+        if k not in dfd.keys():
+            df = pd.DataFrame()
+            df[name] = obj
+            dfd[k] = df
+            #print(name,"Adding new key for len ", k)
+        else:
+            df = dfd[k]
+            df[name] = obj
+            dfd[k] = df
+            #print(name,"Adding col to dfd index ", k)
+        #print(dfd.keys())
+    for key, val in obj.attrs.items():
+        print("    %s: %s" % (key, val),type(val))
+
+```
+
+####################
+
 
 ### Anticipatory Postural Adjustment 
 
