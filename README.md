@@ -77,6 +77,37 @@ This table contains the node paths and the number of rows of each node path:
 |	Measures/Gait/Upper Limb/Foot Phase Difference	|	25	|
 |	Measures/Gait/Upper Limb/Maximum Velocity	|	25	|
 |	Measures/Gait/Upper Limb/Range of Motion	|	25	|
+|	Events/Gait/Lower Limb/All Steps Left	|	113	|
+|	Events/Gait/Lower Limb/All Steps Right	|	113	|
+|	Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times	|	113	|
+|	Events/Turns/Start	|	21	|
+|	Measures/Turns/Angle	|	21	|
+|	Measures/Turns/Duration	|	21	|
+|	Measures/Turns/Peak Velocity	|	21	|
+|	Measures/Turns/Steps	|	21	|
+|	Measures/Gait/Lower Limb/No. Steps in Turn	|	22	|
+|	Measures/Gait/Lower Limb/Total Turn Angle	|	22	|
+|	Measures/Gait/Lower Limb/Turn Direction	|	22	|
+|	Measures/Gait/Lower Limb/Turn Duration	|	22	|
+|	Measures/Gait/Lower Limb/Turn Per Step	|	22	|
+|	Measures/Gait/Lower Limb/Turn Rate	|	22	|
+|	Processed/Joint Angles/Back/Middle/Quaternion	|	15744	|
+|	Processed/Joint Angles/Back/Middle/X	|	15744	|
+|	Processed/Joint Angles/Back/Middle/Y	|	15744	|
+|	Processed/Joint Angles/Back/Middle/Z	|	15744	|
+|	Log/Info	|	1	|
+|	Measures/Anticipatory Postural Adjustment/APA Duration	|	1	|
+|	Measures/Anticipatory Postural Adjustment/First Step Duration	|	1	|
+|	Measures/Anticipatory Postural Adjustment/First Step Range of Motion	|	1	|
+|	Measures/Anticipatory Postural Adjustment/Maximum AP Acceleration	|	1	|
+|	Measures/Anticipatory Postural Adjustment/Maximum ML Acceleration	|	1	|
+|	Measures/Duration	|	1	|
+|	Measures/Gait/Lower Limb/Lateral Step Variability	|	1	|
+|	Measures/Gait/Lower Limb/N	|	1	|
+|	Measures/Turns/N	|	1	|
+
+
+
 
 
 ### Gait Cycle Analysis 
