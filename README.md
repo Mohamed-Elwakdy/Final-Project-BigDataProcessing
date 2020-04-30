@@ -25,6 +25,13 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
 
 ### Import packages
 
+```
+import pandas as pd
+import hdfdict
+import numpy as np
+import h5py,time
+
+```
 
 |    Package Name  | Description |
 | ------------- | --------------------- |
@@ -33,13 +40,7 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
 |h5py | The h5py package is a Pythonic interface to the HDF5 binary data format with storing huge amounts of numerical data, and easily manipulate that data from NumPy|
 |xlsxwriter|XlsxWriter is a Python module that can be used to write text, numbers, formulas and hyperlinks to multiple worksheets|
 
-```
-import pandas as pd
-import hdfdict
-import numpy as np
-import h5py,time
 
-```
 
 ### Read h1 File (Getting the headers/keys)
 
@@ -54,11 +55,8 @@ print(res.keys())
 
 ### Collect Into DataFrames
 
-All fields in this data set has been collected into datafrmes where the number of columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a new
+All fields has been collected into datafrmes where the number of columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a new
 sheet. 
-
-Each sheet contains a Dataframe. For example, sheet 1 contaion Dataframe1, sheet2 contains Dataframe 2, sheet3 contains Dataframe 3, sheet4 contains Dataframe 4, sheet5 contains Dataframe 5 and sheet6 contains Dataframe 6
-The number of columns and rows in each sheet is not the same. 
 
 ```
 dfd = {} # {1:df1,5:df2,113:df3<-add col}
@@ -83,6 +81,76 @@ def print_attrs(name, obj):
         print("    %s: %s" % (key, val),type(val))
 
 ```
+
+### Collect All Dataframes in an Excel file 
+
+All Dataframes collected in spreadsheets for one Excel file. Each sheet contains a Dataframe. For example, sheet 1 contaion Dataframe1, sheet2 contains Dataframe 2, sheet3 contains Dataframe 3, sheet4 contains Dataframe 4, sheet5 contains Dataframe 5 and sheet6 contains Dataframe 6
+The number of columns and rows in each sheet is not the same. 
+
+```
+
+writer = pd.ExcelWriter('C:/Clarkson University - Materials 2/IA 626 - Big Data Processing and Cloud Service/Final Project/Dr Ali - Materials for Final Project/Dr - Ali Sample/Walking/hd5excelout6.xlsx', engine = 'xlsxwriter')
+for k, df in dfd.items():
+    print(k,len(df))
+    df.to_excel(writer, sheet_name = 'sheet_len_'+k)
+writer.save()
+writer.close()
+
+```
+
+### Lower Limb
+
+The leg region is the part of the lower limb that lies between the knee and the rounded medial and lateral prominences 
+that flank the ankle joint. It connects the knee and foot.
+
+The features of the Lower Limb variable are put into data frames. Gait measures are detected, analyzed, and averaged over the extent of the walking duration of the subject. All measures are assessed for asymmetry and variability.
+
+### Fields Description of Lower Limb 
+
+The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double Support, Step Duration, Stride Length and Swing.  
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+|Cycle Duration |The duration of a full gait cycle, measured from the left foot’s initial contact to the next initial contact of the left foot|
+|Gait Speed | The forward speed of the subject, measured as the forward distance traveled during the gait cycle divided by the gait cycle duration|
+|Double Support | The percentage of the gait cycle in which both feet are on the ground|
+|Step Duration| The duration of a step, measured as the period from initial contact of one foot to the next initial contact of the opposite foot|
+|Stride Length| The forward distance travelled by a foot during a gait cycle|
+|Swing| The percentage of the gait cycle in which the foot is not on the ground|
+|Cadence|The number of steps per minute, counting steps made by both feet|
+|Foot Clearance | The height of the foot sensor measured at midswing, relative to its start position while standing|
+|Lateral Step Variability | In a series of 3 consecutive foot placements of the same foot, the variability of perpendicular deviations of the middle foot placement from the line connecting the ﬁrst and third |
+|Circumduction|The amount that the foot travels perpendicular to forward movement while swinging forward during an individual stride| 
+|Foot Strike Angle |The angle of the foot at the point of initial contact. The pitch of the foot when ﬂat is zero and positive when the heel contacts ﬁrst|
+|Toe Off Angle|The angle of the foot as it leaves the ﬂoor at push-off. The pitch of the foot when ﬂat is zero|
+|Stance|The percentage of the gait cycle in which the foot is on the ground|
+|Toe Out Angle|The lateral angle of the foot during the stance phase, relative to the forward motion of the gait cycle. Positive angle is outward rotation|
+
+
+###                             ![Image of screencapture](images/GaitCycleDuration.jpg)
+                                  Figure.2 Full Body Gait Measures: Gait Cycle Analysis
+
+###                             ![Image of screencapture](images/DoubleSupport.jpg)
+                                 Figure.3 Full Body Gait Measures: Double Support 
+
+###                             ![Image of screencapture](images/TeminalDoubleSupport.jpg)   
+                                 Figure.4 Full Body Gait Measures: Terminal Double Support 
+
+###                             ![Image of screencapture](images/SPATIALANALYSIS.jpg)  
+                                 Figure.5 Full Body Gait Measures: Special Analysis  
+
+###                             ![Image of screencapture](images/CIRCUMDUCTION.jpg) 
+                                 Figure.6 Full Body Gait Measures: Circumduction
+
+###                             ![Image of screencapture](images/ELEVATIONATMIDSWING.jpg)
+                                 Figure.7 Full Body Gait Measures: Elevation at Midswing   
+
+###                             ![Image of screencapture](images/FootContactAngles.jpg)   
+                                 Figure.8 Full Body Gait Measures: Foot Contact Angles 
+ 
+
+
+
 
 ####################
 
@@ -113,50 +181,7 @@ df5.columns = ['AnticipatoryPosturalAdjustmentFirstStepRangeofMotion']
 
 ```
 
-### Lower Limb
 
-The leg region is the part of the lower limb that lies between the knee and the rounded medial and lateral prominences 
-that flank the ankle joint. It connects the knee and foot.
-
-Gait measures are detected, analyzed, and averaged over the extent of the walking duration of the subject. All measures are assessed for asymmetry and variability.
-
-
-###                             ![Image of screencapture](images/GaitCycleDuration.jpg)
-                                  Figure.2 Full Body Gait Measures: Gait Cycle Analysis
-
-###                             ![Image of screencapture](images/DoubleSupport.jpg)
-                                 Figure.3 Full Body Gait Measures: Double Support 
-
-###                             ![Image of screencapture](images/TeminalDoubleSupport.jpg)                                                                    Figure.4 Full Body Gait Measures: Terminal Double Support 
-
-### Fields Description of Lower Limb 
-
-The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double Support, Step Duration, Stride Length and Swing.  
-
-|    Field Name  | Description |
-| ------------- | --------------------- |
-| Cycle Duration  |The duration of a full gait cycle, measured from the left foot’s initial contact to the next initial contact of the left foot|
-|Gait Speed | The forward speed of the subject, measured as the forward distance traveled during the gait cycle divided by the gait cycle duration
-|Double Support | The percentage of the gait cycle in which both feet are on the ground
-|Step Duration| The duration of a step, measured as the period from initial contact of one foot to the next initial contact of the opposite foot
-|Stride Length| The forward distance travelled by a foot during a gait cycle
-|Swing| The percentage of the gait cycle in which the foot is not on the ground
-
-The features of the Lower Limb variable are put into data frames. The size of these data frames is not the same where the number of columns are not constant while the number of rows are 25 rows. 
-
-```
-Measures_Gait_LowerLimb_GaitCycleDuration= res['Measures']['Gait']['Lower Limb']['Gait Cycle Duration']
-df12 = pd.DataFrame(Measures_Gait_LowerLimb_GaitCycleDuration)
-df12.columns = ['GaitLowerLimbGaitCycleDurationInSecondsStart','MeasuresGaitLowerLimbGaitCycleDurationInSecondsEnd']
-
-Measures_Gait_LowerLimb_Gait_Speed= res['Measures']['Gait']['Lower Limb']['Gait Speed']
-df13 = pd.DataFrame(Measures_Gait_LowerLimb_Gait_Speed)
-df13.columns = ['GaitLowerLimbGaitSpeed1','MeasuresGaitLowerLimbGaitSpeed2']
-
-Measures_Gait_LowerLimb_NumberStepsInTurn= res['Measures']['Gait']['Lower Limb']['No. Steps in Turn']
-df14 = pd.DataFrame(Measures_Gait_LowerLimb_NumberStepsInTurn)
-df14.columns = ['GaitLowerLimbNumberStepsInTurnPerMinute1', 'MeasuresGaitLowerLimbNumberStepsInTurnPerMinute2']
-```
 ### Upper Limb
 
 The upper limb or upper extremity is the region in the body extending from the deltoid region up to and including the hand, including the arm, axilla and shoulder.
