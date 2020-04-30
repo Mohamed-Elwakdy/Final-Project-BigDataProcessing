@@ -268,15 +268,7 @@ The measures of the postural sway including the Sway Area, RMS Sway, Coronal RMS
                                   Figure.14 Planar Acceleration, Sway Area and Rotation
 
 ###                                ![Image of screencapture](images/POSTURALSWAY2.jpg)
-                                          Figure.14 RMS Sway and Mean Velocity 
-
-
- 
-
-
-
-
-####################
+                                          Figure.15 RMS Sway and Mean Velocity 
 
 
 ### Anticipatory Postural Adjustment 
@@ -292,47 +284,6 @@ The measures of the Anticipatory postural adjustments including 'First Step Dura
 | First Step Duration |The duration of the period spanning from the end of the APA to the initial contact of the ﬁrst step|
 |First Step Range of Motion | The integrated angular velocity of the stepping foot from the end of the APA to the initial contact of the step 
 
-The features of Anticipatory postural adjustments variable are put into two data frames where the number of rows are 2 rows. 
-
-```
-First_Step_Duration = res['Measures']['Anticipatory Postural Adjustment']['First Step Duration']
-df4 = pd.DataFrame(First_Step_Duration)
-df4.columns = ['AnticipatoryPosturalAdjustmentFirstStepDuration']
-
-First_Step_Range_of_Motion = res['Measures']['Anticipatory Postural Adjustment']['First Step Range of Motion'] 
-df5 = pd.DataFrame(First_Step_Range_of_Motion)
-df5.columns = ['AnticipatoryPosturalAdjustmentFirstStepRangeofMotion']
-
-```
 
 
 
-
-
-### Collect the data frames in groups
-
-The Data frames, which have the same number of rows, have been collected in one group with converting them to many CSV files. 
-
-```
-df_Group1 = pd.concat([df1, df2, df3], axis=1, sort=False)
-df_Group2 = pd.concat([df4, df5], axis=1, sort=False)
-df_Group3 = pd.concat([df6, df7, df8,df9,df10,df11], axis=1, sort=False) 
-
-Group1_ConvertCSV= df_Group1.to_csv (r'Group1-DataFrame.csv', index = False, header=True)
-Group2_ConvertCSV= df_Group2.to_csv (r'Group2-DataFrame.csv', index = False, header=True)
-Group3_ConvertCSV= df_Group3.to_csv (r'Group3-DataFrame.csv', index = False, header=True)
-```
-### Collect all groups in many spreadsheets
-
-The groups, which have different number of rows, have been collected in many spreadsheets for one excel file. 
-
-```
-writer = pd.ExcelWriter('Combined in many sheets.xlsx')
-df_Group1.to_excel(writer, sheet_name='sheet1', index=False)
-df_Group2.to_excel(writer, sheet_name='sheet2', index=False)
-Groups_combine_3_4_5.to_excel(writer, sheet_name='sheet3', index=False)
-df_Group6.to_excel(writer, sheet_name='sheet4', index=False)
-df_Group7.to_excel(writer, sheet_name='sheet5', index=False)
-writer.save()
-
-```
