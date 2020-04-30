@@ -155,7 +155,8 @@ The upper limb or upper extremity is the region in the body extending from the d
 The features of Upper Limb variable are put into onme Dataframe
 
 
-### Fields Description of the Upper Limb  
+### Fields Description of the Upper Limb 
+ 
 The measures of the Upper Limb including the Arm Swing Velocity and Arm Swing Range of Motion. 
 
 |    Field Name  | Description |
@@ -169,6 +170,9 @@ The measures of the Upper Limb including the Arm Swing Velocity and Arm Swing Ra
 
 
 ### Fields Description of the Trunk Range of Motion
+
+The measures of the Trunk Range of Motion including the Coronal, Sagittal and Transverse. 
+
 
 |    Field Name  | Description |
 | ------------- | --------------------- |
@@ -187,6 +191,8 @@ All postural sway measures are assessed using the Opal movement sensor placed on
 
 ### Fields Description of the Lumbar Range of Motion
 
+The measures of the Lumbar Range of Motion including the Coronal, Sagittal and Transverse. 
+
 
 |    Field Name  | Description |
 | ------------- | --------------------- |
@@ -200,6 +206,8 @@ All postural sway measures are assessed using the Opal movement sensor placed on
 
 
 ### Fields Description of Sit To Stand/ Stand To Sit
+
+The measures of the Sit To Stand/ Stand To Sit including the Sit To Stand and Stand To Set.
 
 #### Sit To Stand
 
@@ -218,6 +226,55 @@ All postural sway measures are assessed using the Opal movement sensor placed on
 
 ###                                ![Image of screencapture](images/SitToStandAndStandToSet.jpg)
                                                Figure.12 Sit To Stand/Stand To Set  
+
+
+
+### Turning Analysis
+
+Postural measures are detected, analyzed, and averaged over the extent of the walking duration of the subject.
+
+### Fields Description of the Turning 
+
+The measures of the Turning including the Angle and Duration and Velocity.
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+|Angle|The rotational angle of the turn|
+|Duration|The duration of the turn|
+|Velocity|The peak angular velocity of the turn|
+
+
+###                                ![Image of screencapture](images/TurningAnalysis.jpg)
+                                                Figure.13 Turning Analysis 
+
+
+### postural sway
+
+All postural sway measures are assessed using the Opal movement sensor placed on a subject’s lumbar.  All metrics are reported in Coronal, Sagittal and Transverse planes.
+
+### Fields Description of the postural sway
+
+The measures of the postural sway including the Sway Area, RMS Sway, Coronal RMS Sway and Sagittal RMS Sway. 
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+|Sway Area |The area of an ellipse covering 95% of the sway angle in both the coronal and sagittal planes |
+|RMS Sway |The root mean square (RMS) of the sway angle in both the coronal and sagittal planes|
+|Coronal RMS Sway |The root mean square (RMS) of the sway angle in the coronal plane |
+|Sagittal RMS Sway|The root mean square (RMS) of the sway angle in the sagittal plane |
+
+
+###                                ![Image of screencapture](images/POSTURALSWAY1.jpg)
+                                  Figure.14 Planar Acceleration, Sway Area and Rotation
+
+###                                ![Image of screencapture](images/POSTURALSWAY2.jpg)
+                                          Figure.14 RMS Sway and Mean Velocity 
+
+
+ 
+
+
+
 
 ####################
 
@@ -251,39 +308,6 @@ df5.columns = ['AnticipatoryPosturalAdjustmentFirstStepRangeofMotion']
 
 
 
-### Turning Analysis
-
-Postural measures are detected, analyzed, and averaged over the extent of the walking duration of the subject.
-
-### Fields Description of the Turning 
-
-The measures of the Turning including the Angle, Duration and Velocity.
-
-|    Field Name  | Description |
-| ------------- | --------------------- |
-|Angle|The rotational angle of the turn|
-|Duration|The duration of the turn|
-|Velocity|The peak angular velocity of the turn|
-
-
-###                                ![Image of screencapture](images/TurningAnalysis.jpg)
-                                        Figure.6 Postural Measures: Turning Analysis 
-
-The features of Turning variable are put into data frames. The number of rows is 21 rows. 
-
-```
-Measures_Turns_Angle = res['Measures']['Turns']['Angle']
-df25 = pd.DataFrame(Measures_Turns_Angle)
-df25.columns = ['TheRotationalAngleOfTheTurnInDegree']
-
-Measures_Turns_PeakVelocity = res['Measures']['Turns']['Peak Velocity']
-df26 = pd.DataFrame(Measures_Turns_PeakVelocity)
-df26.columns = ['PeakAngularVelocityOfTheTurn']
-
-Measures_Turns_Steps = res['Measures']['Turns']['Steps']
-df27 = pd.DataFrame(Measures_Turns_Steps)
-df27.columns = ['NumberOfStepsInTurns','TimeOfTurnsBasedOnTheNumberOfSteps']
-```
 
 ### Collect the data frames in groups
 
