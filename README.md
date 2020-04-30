@@ -33,6 +33,13 @@ Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times
 |h5py | The h5py package is a Pythonic interface to the HDF5 binary data format with storing huge amounts of numerical data, and easily manipulate that data from NumPy|
 |xlsxwriter|XlsxWriter is a Python module that can be used to write text, numbers, formulas and hyperlinks to multiple worksheets|
 
+```
+import pandas as pd
+import hdfdict
+import numpy as np
+import h5py,time
+
+```
 
 ### Read h1 File (Getting the headers/keys)
 
