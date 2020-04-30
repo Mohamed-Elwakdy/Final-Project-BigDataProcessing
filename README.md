@@ -10,12 +10,74 @@ Here, I worked on one nested data structure h5 file which contains the features 
 
 This table contains the node paths and the number of rows of each node path: 
 
+|    Node Paths  | Number of Rows |
+| ------------- | --------------------- |
 
-Events/Gait/Lower Limb/All Steps Left 
-
-Events/Gait/Lower Limb/All Steps Right 
- 
-Events/Gait/Lower Limb/Cycle Validity with Heel Strike Times  
+|	Events/Gait/Lower Limb/Initial Contact	|	25	|
+|	Events/Gait/Lower Limb/Initial Contact Next	|	25	|
+|	Events/Gait/Lower Limb/Midswing	|	25	|
+|	Events/Gait/Lower Limb/Toe Off	|	25	|
+|	Measures/Gait/Joint/Back/Abduction/Maximum	|	25	|
+|	Measures/Gait/Joint/Back/Abduction/Minimum	|	25	|
+|	Measures/Gait/Joint/Back/Abduction/ROM	|	25	|
+|	Measures/Gait/Joint/Back/Flexion/Maximum	|	25	|
+|	Measures/Gait/Joint/Back/Flexion/Minimum	|	25	|
+|	Measures/Gait/Joint/Back/Flexion/ROM	|	25	|
+|	Measures/Gait/Joint/Back/Rotation/Maximum	|	25	|
+|	Measures/Gait/Joint/Back/Rotation/Minimum	|	25	|
+|	Measures/Gait/Joint/Back/Rotation/ROM	|	25	|
+|	Measures/Gait/Lower Limb/Cadence	|	25	|
+|	Measures/Gait/Lower Limb/Double Support	|	25	|
+|	Measures/Gait/Lower Limb/Elevation at Midswing	|	25	|
+|	Measures/Gait/Lower Limb/Gait Cycle Duration	|	25	|
+|	Measures/Gait/Lower Limb/Gait Speed	|	25	|
+|	Measures/Gait/Lower Limb/Initial Double Support	|	25	|
+|	Measures/Gait/Lower Limb/Initial+Mid Swing	|	25	|
+|	Measures/Gait/Lower Limb/Lateral Step Deviation	|	25	|
+|	Measures/Gait/Lower Limb/Lateral Swing Max	|	25	|
+|	Measures/Gait/Lower Limb/Maximum Pitch	|	25	|
+|	Measures/Gait/Lower Limb/Pitch at Initial Contact	|	25	|
+|	Measures/Gait/Lower Limb/Pitch at Mid Swing	|	25	|
+|	Measures/Gait/Lower Limb/Pitch at Toe Off	|	25	|
+|	Measures/Gait/Lower Limb/Single Limb Support	|	25	|
+|	Measures/Gait/Lower Limb/Stance	|	25	|
+|	Measures/Gait/Lower Limb/Step Duration	|	25	|
+|	Measures/Gait/Lower Limb/Stride Length	|	25	|
+|	Measures/Gait/Lower Limb/Swing	|	25	|
+|	Measures/Gait/Lower Limb/Terminal Double Support	|	25	|
+|	Measures/Gait/Lower Limb/Terminal Swing	|	25	|
+|	Measures/Gait/Lower Limb/Toe Out Angle	|	25	|
+|	Measures/Gait/Lower Limb/Toe Out Angle Max	|	25	|
+|	Measures/Gait/Lower Limb/Toe Out Angle Min	|	25	|
+|	Measures/Gait/Lumbar/Coronal Average Angle	|	25	|
+|	Measures/Gait/Lumbar/Coronal Maximum Angle	|	25	|
+|	Measures/Gait/Lumbar/Coronal Minimum Angle	|	25	|
+|	Measures/Gait/Lumbar/Coronal Range of Motion	|	25	|
+|	Measures/Gait/Lumbar/Sagittal Average Angle	|	25	|
+|	Measures/Gait/Lumbar/Sagittal Maximum Angle	|	25	|
+|	Measures/Gait/Lumbar/Sagittal Minimum Angle	|	25	|
+|	Measures/Gait/Lumbar/Sagittal Range of Motion	|	25	|
+|	Measures/Gait/Lumbar/Transverse Average Angle	|	25	|
+|	Measures/Gait/Lumbar/Transverse Maximum Angle	|	25	|
+|	Measures/Gait/Lumbar/Transverse Minimum Angle	|	25	|
+|	Measures/Gait/Lumbar/Transverse Range of Motion	|	25	|
+|	Measures/Gait/Trunk/Coronal Maximum Angle	|	25	|
+|	Measures/Gait/Trunk/Coronal Minimum Angle	|	25	|
+|	Measures/Gait/Trunk/Coronal Range of Motion	|	25	|
+|	Measures/Gait/Trunk/Relative Coronal Range of Motion	|	25	|
+|	Measures/Gait/Trunk/Relative Sagittal Range of Motion	|	25	|
+|	Measures/Gait/Trunk/Relative Transverse Range of Motion	|	25	|
+|	Measures/Gait/Trunk/Sagittal Average Angle	|	25	|
+|	Measures/Gait/Trunk/Sagittal Maximum Angle	|	25	|
+|	Measures/Gait/Trunk/Sagittal Minimum Angle	|	25	|
+|	Measures/Gait/Trunk/Sagittal Range of Motion	|	25	|
+|	Measures/Gait/Trunk/Transverse Average Angle	|	25	|
+|	Measures/Gait/Trunk/Transverse Maximum Angle	|	25	|
+|	Measures/Gait/Trunk/Transverse Minimum Angle	|	25	|
+|	Measures/Gait/Trunk/Transverse Range of Motion	|	25	|
+|	Measures/Gait/Upper Limb/Foot Phase Difference	|	25	|
+|	Measures/Gait/Upper Limb/Maximum Velocity	|	25	|
+|	Measures/Gait/Upper Limb/Range of Motion	|	25	|
 
 
 ### Gait Cycle Analysis 
