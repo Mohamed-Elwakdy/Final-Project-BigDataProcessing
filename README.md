@@ -12,7 +12,6 @@ This table contains the node paths and the number of rows of each node path:
 
 |    Node Paths  | Number of Rows |
 | ------------- | --------------------- |
-
 |	Events/Gait/Lower Limb/Initial Contact	|	25	|
 |	Events/Gait/Lower Limb/Initial Contact Next	|	25	|
 |	Events/Gait/Lower Limb/Midswing	|	25	|
