@@ -89,7 +89,7 @@ The number of columns and rows in each sheet is not the same.
 
 ```
 
-writer = pd.ExcelWriter('C:/Clarkson University - Materials 2/IA 626 - Big Data Processing and Cloud Service/Final Project/Dr Ali - Materials for Final Project/Dr - Ali Sample/Walking/hd5excelout6.xlsx', engine = 'xlsxwriter')
+writer = pd.ExcelWriter('hd5excelout6.xlsx', engine = 'xlsxwriter')
 for k, df in dfd.items():
     print(k,len(df))
     df.to_excel(writer, sheet_name = 'sheet_len_'+k)
@@ -199,7 +199,25 @@ All postural sway measures are assessed using the Opal movement sensor placed on
                                                Figure.11 Lumbar Range of Motion  
 
 
+### Fields Description of Sit To Stand/ Stand To Sit
 
+#### Sit To Stand
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+| Duration   |The duration of the sit to stand transition|
+| Lean Angle  | The angular range of motion of the trunk during the sit to stand transition|
+
+ 
+#### Stand To Sit
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+| Duration   |The duration of the stand to sit transition|
+| Lean Angle  | The angular range of motion of the trunk during the stand to sit transition|
+
+###                                ![Image of screencapture](images/SitToStandAndStandToSet.jpg)
+                                               Figure.12 Sit To Stand/Stand To Set  
 
 ####################
 
