@@ -181,7 +181,22 @@ The measures of the Upper Limb including the Arm Swing Velocity and Arm Swing Ra
                                                Figure.10 Trunk Range of Motion   
 
 
+### Lumbar Range of Motion
 
+All postural sway measures are assessed using the Opal movement sensor placed on a subject’s lumbar.  All metrics are reported in Coronal, Sagittal and Transverse planes.
+
+### Fields Description of the Lumbar Range of Motion
+
+
+|    Field Name  | Description |
+| ------------- | --------------------- |
+| Coronal   |The angular range of the lumbar spine in the coronal plane (roll)|
+| Sagittal  | The angular range of the lumbar spine in the sagittal plane (pitch) |
+|Transverse|The angular range of the lumbar spine in the transverse plane (yaw)|
+
+
+###                                ![Image of screencapture](images/LumbarRangeofMotion.jpg)
+                                               Figure.11 Lumbar Range of Motion  
 
 
 
