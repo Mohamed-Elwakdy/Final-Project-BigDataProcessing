@@ -217,25 +217,32 @@ The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double 
 
 
 ###                             ![Image of screencapture](images/GaitCycleDuration.jpg)
-                                  Figure.2 Full Body Gait Measures: Gait Cycle Analysis
+               Figure.2 Full Body Gait Measures: Gait Cycle Analysis (source:  APDM Wearable Technologies)
+
 
 ###                             ![Image of screencapture](images/DoubleSupport.jpg)
-                                 Figure.3 Full Body Gait Measures: Double Support 
+               Figure.3 Full Body Gait Measures: Double Support (source:  APDM Wearable Technologies)
+
 
 ###                             ![Image of screencapture](images/TeminalDoubleSupport.jpg)   
-                                 Figure.4 Full Body Gait Measures: Terminal Double Support 
+               Figure.4 Full Body Gait Measures: Terminal Double Support (source:  APDM Wearable Technologies)
+
 
 ###                             ![Image of screencapture](images/SPATIALANALYSIS.jpg)  
-                                 Figure.5 Full Body Gait Measures: Special Analysis  
+               Figure.5 Full Body Gait Measures: Special Analysis (source:  APDM Wearable Technologies)
+
 
 ###                             ![Image of screencapture](images/CIRCUMDUCTION.jpg) 
-                                 Figure.6 Full Body Gait Measures: Circumduction
+               Figure.6 Full Body Gait Measures: Circumduction (source:  APDM Wearable Technologies)
+
 
 ###                             ![Image of screencapture](images/ELEVATIONATMIDSWING.jpg)
-                                 Figure.7 Full Body Gait Measures: Elevation at Midswing   
+               Figure.7 Full Body Gait Measures: Elevation at Midswing (source:  APDM Wearable Technologies)
+  
 
 ###                             ![Image of screencapture](images/FootContactAngles.jpg)   
-                                 Figure.8 Full Body Gait Measures: Foot Contact Angles 
+               Figure.8 Full Body Gait Measures: Foot Contact Angles (source:  APDM Wearable Technologies)
+
  
 
 ### Upper Limb
@@ -255,7 +262,8 @@ The measures of the Upper Limb including the Arm Swing Velocity and Arm Swing Ra
 
 
 ###                                ![Image of screencapture](images/Upperlimb.jpg)
-         Figure.9 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, Turning and Sit to Stand  
+ Figure.9 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, Turning and Sit to Stand (source:  APDM Wearable Technologies)
+  
 
 
 ### Fields Description of the Trunk Range of Motion
