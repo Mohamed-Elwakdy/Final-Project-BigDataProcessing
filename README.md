@@ -114,7 +114,7 @@ This table contains the node paths and the number of rows of each node path:
 ### Gait Cycle Analysis 
 
 ###                               ![Image of screencapture](images/CycleAnalysis.jpg)
-                                           Figure.1 Gait Cycle Analysis
+                           Figure.1 Gait Cycle Analysis (source:  APDM Wearable Technologies)
 
 ### Import packages
 
@@ -148,12 +148,10 @@ print(res.keys())
 
 ### Collect Into DataFrames
 
-All fields has been collected into datafrmes where the number of columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a new
-sheet. 
+All fields has been collected into datafrmes where the number of columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a sheet for each dataframe. Also, we split each column has more than one item to many column with removing all parentheses.
 
 ```
-dfd = {} # {1:df1,5:df2,113:df3<-add col}
-         # Key indicates to the number of rows for each Dataframe
+dfd = {} 
 
 def print_attrs(name, obj):
     global dfd
@@ -161,14 +159,11 @@ def print_attrs(name, obj):
         k= str(len(obj))
         if k not in dfd.keys():
             df = pd.DataFrame()
-            df[name] = obj
-            dfd[k] = df
-            #print(name,"Adding new key for len ", k)
         else:
             df = dfd[k]
-            df[name] = obj
-            dfd[k] = df
-            #print(name,"Adding col to dfd index ", k)
+        df[name] = obj                           
+        df = pd.concat([pd.DataFrame(df[c].tolist()).add_prefix(c) for c in df.columns], axis=1)
+        dfd[k] = df
         #print(dfd.keys())
     for key, val in obj.attrs.items():
         print("    %s: %s" % (key, val),type(val))
@@ -177,14 +172,15 @@ def print_attrs(name, obj):
 
 ### Collect All Dataframes in an Excel file 
 
-All Dataframes collected in spreadsheets for one Excel file. Each sheet contains a Dataframe. For example, sheet 1 contaion Dataframe1, sheet2 contains Dataframe 2, sheet3 contains Dataframe 3, sheet4 contains Dataframe 4, sheet5 contains Dataframe 5 and sheet6 contains Dataframe 6
-The number of columns and rows in each sheet is not the same. 
+All Dataframes collected in spreadsheets for one Excel file. Each sheet contains a Dataframe. For example, sheet 1 contaion Dataframe1, sheet2 contains Dataframe 2, sheet3 contains Dataframe 3, sheet4 contains Dataframe 4, sheet5 contains Dataframe 5 and sheet6 contains Dataframe 6. 
+The number of columns and rows for each sheet is not the same. 
 
 ```
 
 writer = pd.ExcelWriter('hd5excelout6.xlsx', engine = 'xlsxwriter')
 for k, df in dfd.items():
     print(k,len(df))
+    df.columns = df.columns.str.replace(r'\d+', '')
     df.to_excel(writer, sheet_name = 'sheet_len_'+k)
 writer.save()
 writer.close()
