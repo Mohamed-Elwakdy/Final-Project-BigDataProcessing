@@ -2,11 +2,12 @@
 ### Introduction About The Dataset 
 
 
-In this project, the APDM’s advanced wearable sensors, Opalsand Mobility Lab have been used to collect, analyze, and store outcome measures. This process takes less than five minutes and the number of sensors is 3 or 6.
+PDM Wearable Technology has created a testing platform/product called Mobility Lab for research.  A subject can be tested and a report can be generated in less than 5 minutes.  The tests use Opal wearable sensors (3 or 7 sensors). 
 
-The used dataset contains many h5 files that can be openedusing Python. There are many variables that are used in this dataset.  Each file in this dataset contains variables about somebody who is walking or standing.
+The used dataset contains many h5 files that can be opened using Python. Almost 100 variables are used in this dataset. The 90+  movement variables for each subject are collected in one file. One file was used for this project.
 
-Here, I worked on one nested data structure h5 file which contains the features of one walking person. Walking corridor must be at least7 meters in length. The data size of each independent variable (feature) is not the same. 
+The h5 file which contains the features of one walking person. Walking corridor must be at least7 meters in length. 
+
 
 This table contains the node paths and the number of rows of each node path: 
 
