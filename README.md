@@ -362,6 +362,9 @@ The measures of the postural sway including the Sway Area, RMS Sway, Coronal RMS
 ###                                ![Image of screencapture](images/POSTURALSWAY2.jpg)
                                           Figure.15 RMS Sway and Mean Velocity 
 
+###                                ![Image of screencapture](images/POSTURALSWAY2.jpg)
+                                          Figure.15 RMS Sway and Mean Velocity 
+
 
 ### Anticipatory Postural Adjustment 
 
