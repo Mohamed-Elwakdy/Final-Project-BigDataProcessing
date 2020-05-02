@@ -262,7 +262,8 @@ The measures of the Upper Limb including the Arm Swing Velocity and Arm Swing Ra
 
 
 ###                                ![Image of screencapture](images/Upperlimb.jpg)
- Figure.9 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, Turning and Sit to Stand (source:  APDM Wearable Technologies)
+                Figure.9 Sensor Configuration and Measures: Balance, Lower Limb Gait, Upper Limb Gait, 
+                          Turning and Sit to Stand (source:  APDM Wearable Technologies)
   
 
 
