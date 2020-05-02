@@ -280,7 +280,7 @@ The measures of the Trunk Range of Motion including the Coronal, Sagittal and Tr
 
 
 ###                                ![Image of screencapture](images/TRUNKRANGEOFMOTION.jpg)
-                                               Figure.10 Trunk Range of Motion   
+                             Figure.10 Trunk Range of Motion (source:  APDM Wearable Technologies) 
 
 
 ### Lumbar Range of Motion
@@ -300,7 +300,7 @@ The measures of the Lumbar Range of Motion including the Coronal, Sagittal and T
 
 
 ###                                ![Image of screencapture](images/LumbarRangeofMotion.jpg)
-                                               Figure.11 Lumbar Range of Motion  
+                            Figure.11 Lumbar Range of Motion (source:  APDM Wearable Technologies)  
 
 
 ### Fields Description of Sit To Stand/ Stand To Sit
@@ -343,7 +343,7 @@ The measures of the Turning including the Angle and Duration and Velocity.
 
 
 ###                                ![Image of screencapture](images/TurningAnalysis.jpg)
-                                                Figure.13 Turning Analysis 
+                              Figure.13 Turning Analysis (source:  APDM Wearable Technologies) 
 
 
 ### postural sway
@@ -363,10 +363,10 @@ The measures of the postural sway including the Sway Area, RMS Sway, Coronal RMS
 
 
 ###                                ![Image of screencapture](images/POSTURALSWAY1.jpg)
-                                  Figure.14 Planar Acceleration, Sway Area and Rotation
+                  Figure.14 Planar Acceleration, Sway Area and Rotation (source:  APDM Wearable Technologies)
 
 ###                                ![Image of screencapture](images/POSTURALSWAY2.jpg)
-                                          Figure.15 RMS Sway and Mean Velocity 
+                       Figure.15 RMS Sway and Mean Velocity (source:  APDM Wearable Technologies) 
 
 
 ### Anticipatory Postural Adjustment 
