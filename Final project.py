@@ -65,7 +65,7 @@ print(res.keys())
 writer = pd.ExcelWriter('hd5excelout18.xlsx', engine = 'xlsxwriter')
 for k, df in dfd.items():
     print(k,len(df)) # print the key number and the number of rows for each dataframe
-    df.columns = df.columns.str.replace(r'\d+', '') # remove all number of columns which have the same name 
+    df.columns = df.columns.str.replace(r'\d+', '') # remove all number (Zeros) of columns which have the same name 
     df.to_excel(writer, sheet_name = 'sheet_len_'+k, index= False)
 writer.save()
 writer.close()
