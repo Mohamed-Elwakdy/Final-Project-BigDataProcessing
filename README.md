@@ -6,7 +6,7 @@ PDM Wearable Technology has created a testing platform/product called Mobility L
 
 The used dataset contains many h5 files that can be opened using Python. Almost 100 variables are used in this dataset. The 90+  movement variables for each subject are collected in one file. One file was used for this project.
 
-The h5 file which contains the features of one walking person. Walking corridor must be at least7 meters in length. 
+The h5 file which contains the features of one walking person. Walking corridor is at least7 meters in length.
 
 
 This table contains the node paths and the number of rows of each node path: 
