@@ -55,7 +55,7 @@ def print_attrs(name, obj):
 
 f = h5py.File('walking5.h5', 'r') # Read h5 file
 f.visititems(print_attrs) # visititems is for visit all objects in this group and subgroups
-                          # In this case, object will be a Dataset instance not 
+                          # In this case, object will be a Dataset instance
 
 for name in f:
     print(name)
@@ -64,8 +64,8 @@ print(res.keys())
 
 writer = pd.ExcelWriter('hd5excelout18.xlsx', engine = 'xlsxwriter')
 for k, df in dfd.items():
-    print(k,len(df)) # print the key number and the number of rows for each key 
-    df.columns = df.columns.str.replace(r'\d+', '') # remove all number of columns have the same name 
+    print(k,len(df)) # print the key number and the number of rows for each dataframe
+    df.columns = df.columns.str.replace(r'\d+', '') # remove all number of columns which have the same name 
     df.to_excel(writer, sheet_name = 'sheet_len_'+k, index= False)
 writer.save()
 writer.close()
