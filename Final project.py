@@ -23,7 +23,7 @@ def print_attrs(name, obj):
     # " <class 'h5py._hl.group.Group'>" indictes to the subgroup.
     
     if '<class \'h5py._hl.dataset.Dataset\'>' == str(type(obj)):
-        k= str(len(obj))     # k indicate to the length of each object. The objects will have
+        k= str(len(obj))     # k indicates to the length of each object. The objects will have
                              # different number of rows
         #print (k)
         #print (type(obj))
