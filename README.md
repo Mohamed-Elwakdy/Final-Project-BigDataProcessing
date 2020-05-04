@@ -120,7 +120,9 @@ This table contains the node paths and the number of rows of each node path:
 
 ```
 import pandas as pd
+
 import hdfdict
+
 import h5py,time
 
 ```
@@ -130,8 +132,6 @@ import h5py,time
 |pandas  |pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language|
 |hdfdict|hdfdict helps h5py to dump and load python dictionaries|
 |h5py | The h5py package is a Pythonic interface to the HDF5 binary data format with storing huge amounts of numerical data, and easily manipulate that data from NumPy|
-|xlsxwriter|XlsxWriter is a Python module that can be used to write text, numbers, formulas and hyperlinks to multiple worksheets|
-
 
 
 ### Read h1 File (Getting the headers/keys)
@@ -147,7 +147,7 @@ print(res.keys())
 
 ### Collect Into DataFrames
 
-All fields has been collected into datafrmes where the number of columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a sheet for each dataframe. Also, we split each column has more than one item to many column with removing all parentheses.
+All variables has been collected into dataframes where the number of rows and columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a sheet for each dataframe. Also, we split each column contains more than one item to many column with removing all parentheses.
 
 ```
 dfd = {} 
@@ -171,8 +171,7 @@ def print_attrs(name, obj):
 
 ### Collect All Dataframes in an Excel file 
 
-All Dataframes collected in spreadsheets for one Excel file. Each sheet contains a Dataframe. For example, sheet 1 contaion Dataframe1, sheet2 contains Dataframe 2, sheet3 contains Dataframe 3, sheet4 contains Dataframe 4, sheet5 contains Dataframe 5 and sheet6 contains Dataframe 6. 
-The number of columns and rows for each sheet is not the same. 
+All Dataframes have been collected in spreadsheets for one Excel file. Each sheet contains a Dataframe. For example, sheet 1 contains Dataframe1, sheet2 contains Dataframe 2, sheet3 contains Dataframe 3, sheet4 contains Dataframe 4, sheet5 contains Dataframe 5 and sheet6 contains Dataframe 6. The number of columns and rows for each sheet is not the same.
 
 ```
 
@@ -195,7 +194,9 @@ The features of the Lower Limb variable are put into data frames. Gait measures 
 
 ### Fields Description of Lower Limb 
 
-The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double Support, Step Duration, Stride Length and Swing.  
+The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double Support, Step Duration, 
+Stride Length, Swing, Cadence, Foot Clearance, Lateral Step Variability, Circumduction, Foot Strike Angle, 
+Toe Off Angle, Stance and Toe Out Angle.  
 
 |    Field Name  | Description |
 | ------------- | --------------------- |
@@ -247,8 +248,6 @@ The measures of the Lower Limb including the Cycle Duration, Gait Speed, Double 
 ### Upper Limb
 
 The upper limb or upper extremity is the region in the body extending from the deltoid region up to and including the hand, including the arm, axilla and shoulder.
-The features of Upper Limb variable are put into onme Dataframe
-
 
 ### Fields Description of the Upper Limb 
  
@@ -274,7 +273,7 @@ The measures of the Trunk Range of Motion including the Coronal, Sagittal and Tr
 |    Field Name  | Description |
 | ------------- | --------------------- |
 | Coronal   |The angular range of the thoracic spine in the sagittal plane (pitch) |
-|Sagittal  | The angular range of the arm swing|
+|Sagittal  |The angular range of the arm swing|
 |Transverse|The angular range of the thoracic spine in the transverse plane (yaw)|
 
 
@@ -332,7 +331,7 @@ Postural measures are detected, analyzed, and averaged over the extent of the wa
 
 ### Fields Description of the Turning 
 
-The measures of the Turning including the Angle and Duration and Velocity.
+The measures of the Turning including the Angle, Duration and Velocity.
 
 |    Field Name  | Description |
 | ------------- | --------------------- |
@@ -380,7 +379,3 @@ The measures of the Anticipatory postural adjustments including 'First Step Dura
 | ------------- | --------------------- |
 | First Step Duration |The duration of the period spanning from the end of the APA to the initial contact of the ﬁrst step|
 |First Step Range of Motion | The integrated angular velocity of the stepping foot from the end of the APA to the initial contact of the step 
-
-
-
-
