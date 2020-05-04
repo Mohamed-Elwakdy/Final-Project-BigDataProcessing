@@ -147,7 +147,7 @@ print(res.keys())
 
 ### Collect Into DataFrames
 
-All variables has been collected into dataframes where the number of rows and columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a sheet for each dataframe. Also, we split each column contains more than one item to many column with removing all parentheses.
+All variables have been collected into dataframes where the number of rows and columns for each dataframe is not constant. We iterate through all the dataframes dictionary items and create a sheet for each dataframe. Also, we split each column containing more than one item to many columns with removing all parentheses.
 
 ```
 dfd = {} 
