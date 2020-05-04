@@ -121,7 +121,6 @@ This table contains the node paths and the number of rows of each node path:
 ```
 import pandas as pd
 import hdfdict
-import numpy as np
 import h5py,time
 
 ```
